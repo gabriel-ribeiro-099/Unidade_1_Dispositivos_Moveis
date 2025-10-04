@@ -1,47 +1,36 @@
 package com.example.trabalho_unidade1_dispositivos_moveis
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.trabalho_unidade1_dispositivos_moveis.ui.theme.Trabalho_Unidade1_Dispositivos_MoveisTheme
+import android.widget.ImageView
+import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : ComponentActivity() {
+import com.example.basquete.MainActivity as BasqueteActivity
+import com.example.calculadora_app.MainActivity as CalculadoraActivity
+import com.example.pomodoroapp.MainActivity as PomodoroActivity
+
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContent {
-            Trabalho_Unidade1_Dispositivos_MoveisTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
+        setContentView(R.layout.activity_main)
+
+        val iconApp1: ImageView = findViewById(R.id.icon_app1)
+        val iconApp2: ImageView = findViewById(R.id.icon_app2)
+        val iconApp3: ImageView = findViewById(R.id.icon_app3)
+
+        iconApp1.setOnClickListener {
+            val intent = Intent(this, BasqueteActivity::class.java)
+            startActivity(intent)
         }
-    }
-}
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
+        iconApp2.setOnClickListener {
+            val intent = Intent(this, CalculadoraActivity::class.java)
+            startActivity(intent)
+        }
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    Trabalho_Unidade1_Dispositivos_MoveisTheme {
-        Greeting("Android")
+        iconApp3.setOnClickListener {
+            val intent = Intent(this, PomodoroActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
