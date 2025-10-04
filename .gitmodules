@@ -1,0 +1,9 @@
+[submodule "basquete"]
+	path = basquete
+	url = https://github.com/gabriel-ribeiro-099/basquete.git
+[submodule "calculadora_mobile_app"]
+	path = calculadora_mobile_app
+	url = https://github.com/RauanIgor/calculadora_mobile_app.git
+[submodule "PomodoroApp"]
+	path = PomodoroApp
+	url = https://github.com/Bia1000b/PomodoroApp.git
