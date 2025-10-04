@@ -1,5 +1,52 @@
-﻿.gradle/
-.idea/
-**/build/
+﻿# =================================================================
+# Arquivo .gitignore completo para projetos Android
+# =================================================================
+
+# Arquivos gerados pela Build
+# ---------------------------
+*.aab
+*.apk
+*.ap_
+*.apks
+*.dex
+*.jar
+/build/
+/app/build/
+/captures/
+
+# Configurações locais (nunca devem ser versionadas)
+# ----------------------------------------------------
 local.properties
+
+# Arquivos de IDE (Android Studio e IntelliJ)
+# --------------------------------------------
+.idea/
+.gradle/
 *.iml
+*.ipr
+*.iws
+.DS_Store
+# Exceções para compartilhar configurações de projeto (opcional, mas comum)
+!/.idea/codeStyles/
+!/.idea/copyright/
+!/.idea/scopes/
+!/.idea/vcs.xml
+
+# Cache do Gradle
+# ----------------
+.gradletasknamecache
+build-cache/
+
+# Arquivos de serviços do Google (contêm segredos)
+# ------------------------------------------------
+google-services.json
+
+# Arquivos de assinatura de release (extremamente sensíveis)
+# ----------------------------------------------------------
+*.jks
+*.keystore
+
+# Logs de Crash e Diagnósticos
+# ----------------------------
+/app/fabric.properties
+hs_err_pid*
