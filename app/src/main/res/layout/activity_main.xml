@@ -1,63 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="24dp"
-    android:background="#F5F5F7"
+    android:background="@color/backgroundColor"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="My Apps"
-        android:textSize="28sp"
-        android:textColor="#1D1D1F"
-        android:layout_marginBottom="60dp"
-        android:fontFamily="sans-serif-light" />
+    <ImageView
+        android:id="@+id/theme_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/outline_brightness_7_24"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="Mudar tema"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
 
-        <ImageView
-            android:id="@+id/icon_app1"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_margin="16dp"
-            android:src="@drawable/icon_app1"
-            android:contentDescription="Ícone do aplicativo de Basquete"
-            android:clickable="true"
-            android:focusable="true"
-            android:background="?android:attr/selectableItemBackgroundBorderless"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Apps"
+            android:textSize="28sp"
+            android:textColor="@color/textColorPrimary"
+            android:layout_marginBottom="60dp"
+            android:fontFamily="sans-serif-light" />
 
-        <ImageView
-            android:id="@+id/icon_app2"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_margin="16dp"
-            android:src="@drawable/icon_app2"
-            android:contentDescription="Ícone do aplicativo de Calculadora"
-            android:clickable="true"
-            android:focusable="true"
-            android:background="?android:attr/selectableItemBackgroundBorderless"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
 
-        <ImageView
-            android:id="@+id/icon_app3"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_margin="16dp"
-            android:src="@drawable/icon_app3"
-            android:contentDescription="Ícone do aplicativo Pomodoro"
-            android:clickable="true"
-            android:focusable="true"
-            android:background="?android:attr/selectableItemBackgroundBorderless"/>
+            <ImageView
+                android:id="@+id/icon_app1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/icon_app1"
+                android:contentDescription="Ícone do aplicativo de Basquete"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?android:attr/selectableItemBackgroundBorderless"/>
+
+            <ImageView
+                android:id="@+id/icon_app2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/icon_app2"
+                android:contentDescription="Ícone do aplicativo de Calculadora"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?android:attr/selectableItemBackgroundBorderless"/>
+
+            <ImageView
+                android:id="@+id/icon_app3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/icon_app3"
+                android:contentDescription="Ícone do aplicativo Pomodoro"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?android:attr/selectableItemBackgroundBorderless"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>
