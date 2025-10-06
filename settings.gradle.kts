@@ -25,4 +25,4 @@ include(":app")
 include(":trab_1_basquete:app")
 include(":trab_2_calculadora:app")
 include(":trab_3_pomodoro:app")
- 
+include(":core")

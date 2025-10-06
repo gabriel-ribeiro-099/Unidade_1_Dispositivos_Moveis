@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
-
 import com.example.basquete.MainActivity as BasqueteActivity
 import com.example.calculadora_app.MainActivity as CalculadoraActivity
 import com.example.pomodoroapp.MainActivity as PomodoroActivity
